@@ -1,0 +1,91 @@
+
+/* ---------------------------------------------------------
+   Navigation 
+   --------------------------------------------------------- */
+.nav-auth {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    gap: 20px;
+    align-items: center;
+}
+
+nav .nav-auth li a {
+    font-size: 13px;
+}
+
+/*Bouton (Inscription / Déconnexion) */
+.nav-auth .btn {
+    margin: 0;
+    padding: 6px 16px;
+    font-size: 12px;
+    border-bottom-width: 1px;
+}
+
+.nav-auth .btn:hover {
+    transform: none;
+}
+
+nav .nav-user {
+    font-family: var(--font-display);
+    font-size: 12px;
+    color: var(--accent-magenta);
+    white-space: nowrap;
+}
+
+/* ---------------------------------------------------------
+   Responsive
+   --------------------------------------------------------- */
+@media (max-width: 1150px) {
+    .nav-auth {
+        position: static;
+        transform: none;
+        justify-content: center;
+        margin-top: 14px;
+    }
+
+    .site-logo {
+        top: 20px;
+        transform: none;
+    }
+}
+
+@media (max-width: 640px) {
+    .nav-auth {
+        padding-left: 0;
+        flex-wrap: wrap;
+        overflow-x: visible;
+        gap: 12px;
+    }
+    
+    nav .nav-auth li a {
+        font-size: 11px;
+    }
+}
+
+/* ---------------------------------------------------------
+   Images des jeux (téléversement)
+   --------------------------------------------------------- */
+.jeu-image {
+    display: block;
+    max-width: 100%;
+    width: 320px;
+    height: auto;
+    border-radius: 8px;
+    margin: 16px 0;
+}
+
+.jeu-miniature {
+    width: 56px;
+    height: 56px;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+    margin: 0 auto;
+}
+
+.error ul {
+    margin: 0;
+    padding-left: 18px;
+}
